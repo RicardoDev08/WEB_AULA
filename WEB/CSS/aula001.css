@@ -1,0 +1,39 @@
+/* <h1 style="color:blue;">
+cabeçalho azul
+</h1> */
+body{
+    background-color: powderblue;
+}
+h1{
+    color:blue;
+
+}
+#paragrafo1{
+    color:red;
+    font-style:oblique;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px ;
+    font-weight:bold ;   
+}
+
+#paragrafo2{
+    color:rgb(236, 4, 4);
+    background-color:blueviolet,violet;
+}
+#paragrafo3{
+    font-family: "Times New Roman",'Times New Roman', Times, serif;
+    background-attachment:fixed ;
+}
+#paragrafo4{
+    border:1px ;
+    border-color:black ;
+    border-style:hidden;
+    border-radius:10px ;
+    box-shadow:10px 10px 20px rgb(236, 4, 4) ;
+    /* font-family: "Courier New", Consolas, Monospace; */
+}
+p{
+    box-sizing: content-box;  /* border-box */
+    width: 100px;
+    height: 100px ;  
+}

@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Processo</title>
+    <style>
+        .span-required {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Validação de Processo</h1>
+    <div>
+        <input 
+            type="text" 
+            class="required" 
+            placeholder="0000000-00.0000 8.12 0000"
+        >
+        <span class="span-required">
+            O número do processo deve ter o seguinte formato: 0000000-00.0000 8.12 0000
+        </span>
+    </div>
+    <button onclick="NprocessoValidate()">Validar</button>
+
+    <script>
+      
+        const processoRegex = /^\d{7}-\d{2}\.\d{4}\s8\.12\s\d{4}$/;
+    
+        const input = document.querySelector('.required');
+        const span = document.querySelector('.span-required');
+
+        function NprocessoValidate() {
+            const processoValue = input.value; 
+
+            if (processoRegex.test(processoValue)) {
+                removeError(); 
+            } else {
+                setError(); 
+            }
+        }
+
+   
+        function setError() {
+            span.style.display = 'block'; 
+        }
+
+        function removeError() {
+            span.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- // Regex para validar o número do processo
+const processoRegex = /^\d{7}-\d{2}\.\d{4}\s8\.12$/;
+const input = document.querySelector('#numero-processo'); // Input específico
+const span = document.querySelector('.span-required'); // Mensagem de erro
+
+function NprocessoValidate() {
+    const processoValue = input.value; // Obtém o valor do input
+
+    if (processoRegex.test(processoValue)) {
+        input.classList.add('valid'); // Adiciona borda verde
+        input.classList.remove('invalid'); // Remove borda vermelha
+        span.style.display = 'none'; // Oculta a mensagem de erro
+    } else {
+        input.classList.add('invalid'); // Adiciona borda vermelha
+        input.classList.remove('valid'); // Remove borda verde
+        span.style.display = 'block'; // Exibe a mensagem de erro
+    }
+} -->
