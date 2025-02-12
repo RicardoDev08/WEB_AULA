@@ -1,0 +1,122 @@
+@import url(./root.css);
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 64px;
+}
+
+.nav {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 8px 32px;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.logo {
+    aspect-ratio: 1 / 1;
+
+    & img {
+        border-radius: 100%;
+        height: 100%;
+        }
+}   
+
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-btn div {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 64px;
+        width: 30%;
+        background: #333;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+        left: 0;
+        flex-direction: column;
+        height: 15%;
+        width: 40%;
+        border-radius: 0 8px 8px 0;
+        row-gap: 20px;
+        background-color: #5B52BC;
+        align-items: flex-start;
+
+        & > div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        & #inline-1{
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            border: 5px;
+        }
+        & #inline-2{
+            left: 0;
+            width: 70%;
+            height: 3px;
+            background-color: white;
+            border: 5px;
+        }
+    }
+    #icone-map, #icone-home{
+        color: #fff;
+
+
+    }
+}
+.banner-fundo img{
+    width: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    display:block;
+    position: relative;
+    overflow: visible;
+    inset: 0%;
+
+}
