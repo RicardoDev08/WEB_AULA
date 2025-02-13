@@ -35,7 +35,12 @@ body {
         height: 100%;
         }
 }   
-
+.nome-logo{
+    text-decoration: none;
+    border-bottom: none;
+    text-align: center;
+    color: #fff;
+}
 
 .menu-btn {
     display: none;
