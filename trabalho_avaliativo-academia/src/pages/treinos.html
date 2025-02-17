@@ -3,60 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forma Fitness</title>
+    <link rel="stylesheet" href="../styles/treinos.css">
+    <link rel="icon" href="../../media/img/logo-academia.jpg" type="image/x-icon">
+    <title>Treinos - Forma Fitness</title>
 </head>
-<header>
-    <nav class="header">
-
-        <div class="logotipo">
-            <a href="index.html" class="logo">
-                <img src="../../media/img/logo-academia.jpg" alt="Logo Forma Fitness">
-                <span class="nome-logo">Forma Fitness</span>
-            </a>
-        </div>
-
-        <div class="menu-btn" onclick="toggleMenu()">
-            <div></div>
-            <div></div>  
-            <div></div>
-        </div>
-
-        <ul class="nav-links">
-            <li><a class="navegation" href="../pages/index.html">Home</a></li>
-            <li><a class="navegation" href="../pages/sobre.html">Sobre nós</a></li>
-            <li><a class="navegation" href="../pages/treinos.html">Treinos</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header>
+        <nav class="header">
+            <div class="logotipo">
+                <a href="index.html" class="logo">
+                    <img src="../../media/img/logo-academia.jpg" alt="Logo Forma Fitness">
+                    <span class="nome-logo">Forma Fitness</span>
+                </a>
+            </div>
+    
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a class="navegation" href="home.html">Home</a></li>
+                <li><a class="navegation" href="sobre.html">Sobre nós</a></li>
+                <li><a class="navegation" href="treinos.html">Treinos</a></li>
+                <li><a class="navegation" href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <h1>Como Montar um Treino para Iniciantes:</h1>
-        <p>
-            Montar um treino para iniciantes é o primeiro passo para uma jornada de sucesso na academia! Ao começar, o foco deve ser no desenvolvimento de força, resistência e no aprendizado da execução correta dos exercícios. Aqui estão algumas dicas para criar um plano de treino eficiente e seguro:
-            
-            Aquecimento (5-10 minutos):
-            Antes de começar os exercícios, sempre faça um aquecimento para preparar os músculos e as articulações. Pode ser uma caminhada leve, corrida ou alguns exercícios de mobilidade.
-            
-            Treino de Corpo Inteiro:
-            Para iniciantes, é importante focar em exercícios que trabalhem o corpo todo. Exemplo de treino:
-            
-            Agachamento: Trabalha pernas e glúteos.
-            Flexão de Braços (ou de joelhos, se necessário): Fortalece peito, ombros e tríceps.
-            Remada Unilateral com Halteres: Foca nas costas e bíceps.
-            Prancha: Excelente para fortalecer o core (abdômen e lombar).
-            Número de Séries e Repetições:
-            Comece com 3 séries de 8-12 repetições para cada exercício. Isso permite que você construa força sem exagerar, garantindo uma boa adaptação do corpo.
-            
-            Frequência:
-            Realize o treino 3 a 4 vezes por semana, intercalando dias de treino com dias de descanso para promover a recuperação muscular.
-            
-            Progressão Gradual:
-            Com o tempo, aumente a intensidade do treino, seja aumentando o número de repetições, séries ou a carga utilizada. Isso permitirá que o corpo continue evoluindo.
-            
-            Alongamento (5-10 minutos):
-            Finalize cada treino com alongamentos para melhorar a flexibilidade e prevenir lesões.
-            
-            Lembre-se, a consistência é a chave para o sucesso. Comece devagar, aprenda os movimentos corretamente e vá aumentando a dificuldade conforme sua confiança e força melhoram!</p>
+        <section class="treinos-hero">
+            <h1>Nossos Treinos</h1>
+            <p>Escolha o treino ideal para seus objetivos</p>
+        </section>
+
+        <section class="treinos-grid">
+            <div class="treino-card" data-treino="iniciante">
+                <img src="../../media/img/treino-iniciante.jpg" alt="Treino Iniciante">
+                <div class="treino-content">
+                    <h3>Treino Iniciante</h3>
+                    <p>Perfeito para quem está começando sua jornada fitness</p>
+                    <button class="ver-mais">Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="treino-card" data-treino="intermediario">
+                <img src="../../media/img/treino-intermediario.jpg" alt="Treino Intermediário">
+                <div class="treino-content">
+                    <h3>Treino Intermediário</h3>
+                    <p>Para quem já tem experiência e quer intensificar</p>
+                    <button class="ver-mais">Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="treino-card" data-treino="avancado">
+                <img src="../../media/img/treino-avancado.jpg" alt="Treino Avançado">
+                <div class="treino-content">
+                    <h3>Treino Avançado</h3>
+                    <p>Treinos intensos para máximo resultado</p>
+                    <button class="ver-mais">Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="treino-card" data-treino="funcional">
+                <img src="../../media/img/treino-funcional.jpg" alt="Treino Funcional">
+                <div class="treino-content">
+                    <h3>Treino Funcional</h3>
+                    <p>Melhore sua força e mobilidade</p>
+                    <button class="ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Forma Fitness</h3>
+                <p>Sua melhor versão começa aqui!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@formafitness.com</p>
+                <p>Telefone: (11) 9999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 6h às 23h</p>
+                <p>Sábados e Domingos: 8h às 18h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Forma Fitness. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/treinos.js"></script>
 </body>
 </html>

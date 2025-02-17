@@ -10,7 +10,6 @@
 <body>
     <header>
         <nav class="header">
-
             <div class="logotipo">
                 <a href="index.html" class="logo">
                     <img src="../../media/img/logo-academia.jpg" alt="Logo Forma Fitness">
@@ -25,46 +24,103 @@
             </div>
     
             <ul class="nav-links">
-                <li><a class="navegation" href="../pages/index.html">Home</a></li>
+                <li><a class="navegation" href="../pages/home.html">Home</a></li>
                 <li><a class="navegation" href="../pages/sobre.html">Sobre nós</a></li>
                 <li><a class="navegation" href="../pages/treinos.html">Treinos</a></li>
+                <li><a class="navegation" href="../pages/contatos.html">Contatos</a></li>
             </ul>
         </nav>
     </header>
     
-
     <main>
         <div class="banner-fundo">
-            <img src="../../media/img/banner-fundo.jpg" alt="">
-                <h1>Seja Bem Vindo a Forma Fitness</h1><hr>
-                <p>Aqui Você verá o melhor do fitness </p>
+            <img src="../../media/img/banner-fundo.jpg" alt="Banner Forma Fitness">
+            <h1>Seja Bem Vindo a Forma Fitness</h1><hr>
+            <p>Aqui Você verá o melhor do fitness</p>
         </div>
 
-        <section class="section-1">            
+        <section class="section-video-1">            
             <div class="video-training">
                 <div class="descrition_video-1">
-                    <h2>Fique por dentro das malhores dicas!</h2>
+                    <h2>Fique por dentro das melhores dicas!</h2>
                     <p>treinos</p>
                 </div>
                 <div class="video-1">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Q5t76g9yh3g?si=VAiGLZxD73d4Nf6z" title="YouTube video player"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Q5t76g9yh3g?si=VAiGLZxD73d4Nf6z" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                 </div>
             </div>    
-            <div class="blog-card-1">
-                <a href="./treinos.html">
-                    <img src="../../media/img/homem-treinando.jpg" alt="">
-                    <div class="blog-card_content-1">
-                        <div class="h1-treino-iniciantes">Treino para iniciantes</div>
-                        <div class="p-treino-iniciantes">Saiba as melhores divisões de treino
-                        para você que está começando agora, não fique perdido!   
+            
+            <div class="cards-section">
+                <div class="blog-card-1">
+                    <a href="./treinos.html">
+                        <img src="../../media/img/homem-treinando.jpg" alt="Homem treinando">
+                        <div class="blog-card_content-1">
+                            <h3 class="h1-treino-iniciantes">Treino para iniciantes</h3>
+                            <p class="p-treino-iniciantes">Saiba as melhores divisões de treino
+                            para você que está começando agora, não fique perdido!</p>
                         </div>
-                    </div>
-                </a>            
+                    </a>            
+                </div>
+
+                <div class="blog-card-1">
+                    <a href="./treinos.html">
+                        <img src="../../media/img/mulher-treinando.jpg" alt="Mulher treinando">
+                        <div class="blog-card_content-1">
+                            <h3 class="h1-treino-iniciantes">Treino para mulheres</h3>
+                            <p class="p-treino-iniciantes">Descubra os melhores exercícios para definição e fortalecimento muscular feminino!</p>
+                        </div>
+                    </a>            
+                </div>
             </div>
-        </section>        
+        </section>
+
+        <section class="beneficios">
+            <h2>Benefícios Exclusivos</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <i class="icon-equipamento"></i>
+                    <h3>Equipamentos Modernos</h3>
+                    <p>Academia completa com os melhores e mais modernos equipamentos do mercado.</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="icon-professores"></i>
+                    <h3>Professores Qualificados</h3>
+                    <p>Equipe de profissionais especializados para te ajudar a alcançar seus objetivos.</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="icon-horario"></i>
+                    <h3>Horário Flexível</h3>
+                    <p>Academia aberta todos os dias com horários que se adaptam à sua rotina.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Forma Fitness</h3>
+                <p>Sua melhor versão começa aqui!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@formafitness.com</p>
+                <p>Telefone: (11) 9999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 6h às 23h</p>
+                <p>Sábados e Domingos: 8h às 18h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Forma Fitness. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
 </body>
-<script href="./script.js"></script>
 </html>

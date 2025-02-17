@@ -1,3 +1,4 @@
+
 .header {
     position: fixed;
     top: 0;
@@ -8,18 +9,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 32px;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 1000;
-   
+    box-sizing: border-box;
 }
 
 .logotipo {
     display: flex;
     align-items: center;
-
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center; 
     text-decoration: none;
@@ -27,30 +27,26 @@
     gap: 15px;
 }
 
-.logo img{
+.logo img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover; 
 }
 
-
-.nome-logo{
+.nome-logo {
     text-decoration: none;
     color: #fff;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    display: inline-block;
- 
 }   
-
- 
 
 .nav-links {
     display: flex;
     list-style: none;
-    margin-left: auto; 
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
@@ -61,4 +57,9 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5B52BC;
 }

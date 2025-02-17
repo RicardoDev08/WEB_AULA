@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/sobre.css">
+    <link rel="icon" href="../../media/img/logo-academia.jpg" type="image/x-icon">
+    <title>Sobre Nós - Forma Fitness</title>
 </head>
 <body>
+    <header>
+        <nav class="header">
+            <div class="logotipo">
+                <a href="index.html" class="logo">
+                    <img src="../../media/img/logo-academia.jpg" alt="Logo Forma Fitness">
+                    <span class="nome-logo">Forma Fitness</span>
+                </a>
+            </div>
     
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a class="navegation" href="home.html">Home</a></li>
+                <li><a class="navegation" href="sobre.html">Sobre nós</a></li>
+                <li><a class="navegation" href="treinos.html">Treinos</a></li>
+                <li><a class="navegation" href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sobre-hero">
+            <h1>Nossa História</h1>
+            <p>Conheça a Forma Fitness</p>
+        </section>
+
+        <section class="nossa-historia">
+            <div class="historia-content">
+                <h2>Como Tudo Começou</h2>
+                <p>A Forma Fitness nasceu da paixão por ajudar pessoas a alcançarem seus objetivos de saúde e bem-estar. Nosso projeto começou em 2024 com uma missão clara: democratizar o acesso à informação sobre treinos e vida saudável.</p>
+                
+                <p>Percebemos que muitas pessoas tinham dúvidas sobre como começar sua jornada fitness, como executar exercícios corretamente e como manter uma rotina de treinos eficiente. Foi assim que surgiu a ideia de criar uma plataforma completa de informações e orientações.</p>
+
+                <h2>Nossa Missão</h2>
+                <p>Nosso objetivo é ser mais que uma academia - queremos ser um centro de conhecimento e apoio para todos que buscam uma vida mais saudável. Através do nosso site, oferecemos:</p>
+                <ul>
+                    <li>Programas de treino personalizados</li>
+                    <li>Orientações sobre exercícios</li>
+                    <li>Dicas de nutrição e bem-estar</li>
+                    <li>Suporte contínuo aos alunos</li>
+                </ul>
+
+                <h2>Nossos Valores</h2>
+                <div class="valores-grid">
+                    <div class="valor-card">
+                        <h3>Compromisso</h3>
+                        <p>Dedicação total ao sucesso dos nossos alunos</p>
+                    </div>
+                    <div class="valor-card">
+                        <h3>Qualidade</h3>
+                        <p>Excelência em todos os nossos serviços</p>
+                    </div>
+                    <div class="valor-card">
+                        <h3>Inovação</h3>
+                        <p>Sempre em busca das melhores práticas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Forma Fitness</h3>
+                <p>Sua melhor versão começa aqui!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@formafitness.com</p>
+                <p>Telefone: (11) 9999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 6h às 23h</p>
+                <p>Sábados e Domingos: 8h às 18h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Forma Fitness. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/sobre.js"></script>
 </body>
 </html>
